@@ -1,0 +1,25 @@
+.border-pulse {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    animation: border-pulse-animation .8s infinite linear;
+    animation-play-state: paused;
+}
+
+.inner-border-pulse {
+    margin: auto;
+    background-color: #1f2937;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    animation: border-pulse-animation .8s infinite linear;
+    animation-play-state: paused;
+}
+
+@keyframes border-pulse-animation {
+    0% {
+        transform: scale(0.1);
+    }
+}

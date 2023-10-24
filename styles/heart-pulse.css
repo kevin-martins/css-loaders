@@ -1,0 +1,28 @@
+.heart-pulse {
+    transform: scale(5);
+}
+
+svg polyline {
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+#back {
+    stroke: rgba(255, 255, 255, 0.3);
+}
+  
+#front {
+    stroke: rgba(255, 255, 255, 1);
+    stroke-dasharray: 12, 36;
+    stroke-dashoffset: 48;
+    animation: heart-pulse-animation 1.2s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes heart-pulse-animation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

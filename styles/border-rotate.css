@@ -1,0 +1,28 @@
+.border-rotate {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 2px solid transparent;
+    border-right-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    animation: border-rotate-animation .8s linear infinite;
+    animation-play-state: paused;
+}
+
+/* .inner-border-rotate {
+    margin: auto auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 205px;
+    height: 205px;
+    background: conic-gradient(transparent 0deg 60deg, #1f2937 60deg 360deg);;
+    border-radius: 50%;
+} */
+
+@keyframes border-rotate-animation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
