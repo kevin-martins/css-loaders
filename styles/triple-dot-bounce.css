@@ -1,0 +1,26 @@
+.triple-dot-bounce {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 50%;
+    animation: triple-dot-bounce-animation 1s infinite linear;
+    animation-play-state: paused;
+}
+
+.triple-dot-bounce:nth-child(2) {
+    animation-delay: .5s;
+}
+
+@keyframes triple-dot-bounce-animation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+        /* top: 100px; */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

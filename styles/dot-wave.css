@@ -5,7 +5,7 @@
     display: inline-block;
     transform-origin: bottom center;
     border-radius: 50%;
-    animation: dot-wave-animation 1s infinite ease-in-out;
+    animation: dot-wave-animation 1.6s infinite ease-in-out;
     animation-play-state: paused;
 }
 

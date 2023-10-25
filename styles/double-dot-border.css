@@ -1,0 +1,37 @@
+.double-dot-border {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 2px solid transparent;
+    border-left-color: rgba(255, 255, 255, 1);
+    border-right-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    animation: double-dot-border-animation 1.5s linear infinite;
+    animation-play-state: paused;
+}
+
+.double-dot-border::after {
+    content: '';
+    background-color: white;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.double-dot-border::before {
+    content: '';
+    background-color: white;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 91px;
+    left: 91px;
+    border-radius: 50%;
+}
+
+@keyframes double-dot-border-animation {
+    100% {
+        transform: rotate(360deg);
+    }
+}

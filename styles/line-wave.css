@@ -8,7 +8,7 @@
     transform-origin: bottom center;
     /* border-top-right-radius: 20px;
     border-top-left-radius: 20px; */
-    animation: line-wave-animation 1.2s linear infinite;
+    animation: line-wave-animation 1.4s linear infinite;
     animation-play-state: paused;
 }
 

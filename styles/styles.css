@@ -20,7 +20,11 @@ body {
 }
 
 .center:hover .border-pulse,
-.center:hover .border-double,
+.center:hover .double-dot-border,
+.center:hover .triple-dot-bounce,
+.center:hover .dot-pulse::after,
+.center:hover .loading-text-wave,
+.center:hover .double-border,
 .center:hover .inner-border-pulse,
 .center:hover .border-rotate,
 .center:hover .dot-bounce,
