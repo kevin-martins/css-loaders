@@ -1,0 +1,15 @@
+.triple-border-rotate {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: conic-gradient(transparent 0deg 60deg, white 60deg 120deg, transparent 120deg 180deg, white 180deg 240deg, transparent 240deg 300deg, white 300deg 360deg);
+    border-radius: 50%;
+    animation: triple-border-rotate-animation 1.4s linear infinite;
+    animation-play-state: paused;
+}
+    
+@keyframes triple-border-rotate-animation {
+    100% {
+        transform: rotate(360deg);
+    }
+}

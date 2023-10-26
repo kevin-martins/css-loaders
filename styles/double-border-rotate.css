@@ -1,4 +1,4 @@
-.double-border {
+.double-border-rotate {
     position: relative;
     width: 150px;
     height: 150px;
@@ -6,11 +6,11 @@
     border-left-color: rgba(255, 255, 255, 1);
     border-right-color: rgba(255, 255, 255, 1);
     border-radius: 50%;
-    animation: double-border-animation 1.5s linear infinite;
+    animation: double-border-rotate-animation 1.5s linear infinite;
     animation-play-state: paused;
 }
 
-@keyframes double-border-animation {
+@keyframes double-border-rotate-animation {
     100% {
         transform: rotate(360deg);
     }
