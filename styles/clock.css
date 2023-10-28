@@ -1,0 +1,37 @@
+.clock {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.hour-needle,
+.minute-needle {
+    position: absolute;
+    width: 2px;
+    transform-origin: bottom center;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-100%);
+}
+
+.hour-needle {
+    height: 30px;
+    background-color: red;
+    animation: hour-needle-animation 12s linear infinite;
+    animation-play-state: paused;
+}
+
+.minute-needle {
+    height: 65px;
+    background-color: red;
+    animation: hour-needle-animation 1s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes hour-needle-animation {
+    100% {
+        transform: translateY(-100%) rotate(360deg);
+    }
+}

@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="styles/line-wave.css">
     <link rel="stylesheet" href="styles/loading-text-wave.css">
     <link rel="stylesheet" href="styles/double-dot-border.css">
+    <link rel="stylesheet" href="styles/clock.css">
     <link rel="stylesheet" href="styles/border-rotate.css">
     <link rel="stylesheet" href="styles/double-border-rotate.css">
     <link rel="stylesheet" href="styles/triple-border-rotate.css">
-    <link rel="stylesheet" href="styles/dot-rotate.css">
+    <link rel="stylesheet" href="styles/circular-dot-roller.css">
+    <link rel="stylesheet" href="styles/circular-dot-fade.css">
     <link rel="stylesheet" href="styles/dot-pulse.css">
     <link rel="stylesheet" href="styles/border-pulse.css">
     <link rel="stylesheet" href="styles/dot-bounce.css">
@@ -55,20 +57,18 @@
             </ul>
         </section>
 
-        <section class="center">
-            <div class="dot-rotate-container">
-                <!-- <li class="dot-rotate"></li>
-                <li class="dot-rotate"></li>
-                <li class="dot-rotate"></li>
-                <li class="dot-rotate"></li>
-                <li class="dot-rotate"></li>
-                <li class="dot-rotate"></li>
-                <li class="dot-rotate"></li>
-                <li class="dot-rotate"></li>
-                <li class="dot-rotate"></li>
-                <li class="dot-rotate"></li> -->
+        <!-- <section class="center">
+            <div class="circular-dot-fade">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-        </section>
+        </section> -->
 
         <section class='center'>
             <div class='border-pulse'>
@@ -140,6 +140,26 @@
             <div class='triple-border-rotate'></div>
         </section>
 
+        <section class='center'>
+            <div class="circular-dot-roller">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+
+        <section class="center">
+            <div class="clock">
+                <div class="hour-needle"></div>
+                <div class="minute-needle"></div>
+            </div>
+        </section>
+
         <!-- paume de chat en diagonale sur la droite qui marche -->
         <!-- symbole en escargot avec polyline -->
     </main>
@@ -147,5 +167,13 @@
     <footer>
         <p>&copy; 2023 CSS Templates by Martins Kevin</p>
     </footer>
+    <script>
+        setTimeout(function() {
+        // Scroll to the bottom
+            window.scrollTo(0, document.body.scrollHeight);
+        }, 100);
+        // localStorage.setItem('scrollPosition', window.scrollY);
+        // window.scrollTo(0, localStorage.getItem('scrollPosition') || 0);
+    </script>
 </body>
 </html>

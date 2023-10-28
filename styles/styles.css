@@ -20,7 +20,11 @@ body {
 }
 
 .center:hover .border-pulse,
+.center:hover .circular-dot-roller div,
+.center:hover .circular-dot-fade div,
 .center:hover .double-dot-border,
+.center:hover .hour-needle,
+.center:hover .minute-needle,
 .center:hover .triple-dot-bounce,
 .center:hover .dot-pulse::after,
 .center:hover .loading-text-wave,
